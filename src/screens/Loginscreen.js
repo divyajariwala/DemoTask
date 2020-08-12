@@ -18,7 +18,7 @@ export default class Homescreen extends Component {
   render() {
     return (
       <SafeAreaView>
-        <View style={{height:'100%'}}>
+        <View style={{height: '100%'}}>
           <View style={styles.container}>
             <Text style={styles.name}> Welcome To </Text>
             <Text style={styles.name1}>Oasis Grill</Text>
@@ -40,7 +40,9 @@ export default class Homescreen extends Component {
               Forget Password
             </Text>
 
-            <Pressable style={styles.buttonStyle}>
+            <Pressable
+              style={styles.buttonStyle}
+              onPress={() => this.props.navigation.navigate('Register')}>
               <Text style={styles.buttonText}>Sign In</Text>
             </Pressable>
             <View

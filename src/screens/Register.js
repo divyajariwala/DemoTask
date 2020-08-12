@@ -36,7 +36,9 @@ export default class Register extends Component {
               <ConformPass />
             </View>
 
-            <Pressable style={styles.buttonStyle}>
+            <Pressable
+              style={styles.buttonStyle}
+              onPress={() => this.props.navigation.navigate('Home')}>
               <Text style={styles.buttonText}>Sign Up</Text>
             </Pressable>
             <View

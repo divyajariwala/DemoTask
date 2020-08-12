@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 
 export default function Bottomtab() {
   return (
-    <NavigationContainer>
+    
       <Tab.Navigator
         initialRouteName="Homescreen"
         tabBarOptions={{
@@ -49,6 +49,6 @@ export default function Bottomtab() {
           }}
         />
       </Tab.Navigator>
-    </NavigationContainer>
+   
   );
 }
